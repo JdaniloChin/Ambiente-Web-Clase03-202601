@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=body">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo de bootstrap</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ambiente Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="colapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu Navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Formulario Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Formulario Custom</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container mt-5">
+            <div class="card p-4 shadow-sm mx-auto bg-dark text-white" style="max-width: 500px;">
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo:</label>
+                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Juan Perez">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo:</label>
+                        <input class="form-control" type="email" id="correo" name="correo" placeholder="usuario@dominio.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">Contraseña:</label>
+                        <input class="form-control" type="password" id="pass" name="pass" placeholder="*******">
+                    </div>
+                    <div class="mb-3">
+                        <label for="repeat-pass" class="form-label">Confirmar Contraseña:</label>
+                        <input class="form-control" type="password" id="repeat-pass" name="repeat-pass" placeholder="*******">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha-nac" class="form-label">Fecha Nacimiento:</label>
+                        <input class="form-control" type="date" id="fecha-nac" name="fecha-nac" placeholder="yyyy-mm-dd">
+                    </div>
+                    <label class="form-label d-block">Género:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="femenino" name="genero" value="femenino">
+                        <label class="form-check-label" for="femenino">Femenino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="masculino" name="genero" value="masculino">
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="otro" name="genero" value="otro">
+                        <label class="form-check-label" for="otro">Otro</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                        <label class="form-check-label" for="terms">Acepto los <a href="#">Términos y Condiciones</a></label>
+                    </div>
+                    <button class="btn btn-primary w-100" id="registrar" type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-3">
+        &copy; 2026 - Universidad Fidélitas - Ambiente Web Cliente Servidor
+    </footer>
+</body>
+</html>

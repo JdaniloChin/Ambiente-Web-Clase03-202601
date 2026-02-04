@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <title>Clase 03</title>
+    <style>
+        /*Awui se puede poner estilo local*/
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clase de concepto de caja</h1>
+    </header>
+    <nav>
+        <a href="#info">Informacion</a>
+        <a href="#formulario">Formulario</a>
+        <a href="./formBT.html">Formulario Bootstrap</a>
+    </nav>
+    <div class="contenedor">
+    <main>
+        <section id="info">
+            <h2>Estructura Básica</h2>
+            <p>Todo documento HTML5 inicia con <code>&lt;!DOCTYPE html&gt;, seguido de las etiquetas <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;footer&gt;</code></p>
+        </section>
+        <section id="formulario">
+            <h2>Formulario Ejemplo</h2>
+            <form class="form-box" action="#" method="post">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Juan Perez">
+                <br>
+                <label>Correo:</label>
+                <input type="email" name="correo" id="correo" required placeholder="usuario@dominio.com">
+                <br>
+                <label>Contraseña:</label>
+                <input type="password" name="pass" id="pass" required placeholder="**********">
+                <br>
+                <label>Confirmar Contraseña:</label>
+                <input type="password" name="repeat-pass" id="repeat-pass" required placeholder="**********">
+                <br>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h3>Dato Interesante</h3>
+        <p> HTML5 se lanzó en 2014 y trajo mejoras en la integracion de video, audio y nuevas etiquetas semanticas</p>
+    </aside>
+    </div>
+    <footer>
+        &copy; 2026 - Universidad Fidélitas - Ambiente Web Cliente Servidor
+    </footer>
+</body>
+</html>
