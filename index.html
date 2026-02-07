@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./public/css/styles.css">
     <title>Clase 03</title>
     <style>
-        /*Awui se puede poner estilo local*/
+        /*Aqui se puede poner estilo local*/
     </style>
 </head>
 <body>
@@ -16,7 +16,6 @@
     <nav>
         <a href="#info">Informacion</a>
         <a href="#formulario">Formulario</a>
-        <a href="./formBT.html">Formulario Bootstrap</a>
     </nav>
     <div class="contenedor">
     <main>
@@ -25,22 +24,19 @@
             <p>Todo documento HTML5 inicia con <code>&lt;!DOCTYPE html&gt;, seguido de las etiquetas <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;footer&gt;</code></p>
         </section>
         <section id="formulario">
-            <h2>Formulario Ejemplo</h2>
-            <form class="form-box" action="#" method="post">
-                <label>Nombre:</label>
-                <input type="text" name="nombre" id="nombre" required placeholder="Juan Perez">
-                <br>
+            <h2>Formulario Inicio Sesión</h2>
+            <form class="form-box" action="#" method="post" id="loginForm">
                 <label>Correo:</label>
                 <input type="email" name="correo" id="correo" required placeholder="usuario@dominio.com">
                 <br>
                 <label>Contraseña:</label>
                 <input type="password" name="pass" id="pass" required placeholder="**********">
                 <br>
-                <label>Confirmar Contraseña:</label>
-                <input type="password" name="repeat-pass" id="repeat-pass" required placeholder="**********">
-                <br>
-                <button type="submit">Registrar</button>
+                <button type="submit">Iniciar Sesión</button>
             </form>
+            <div id="login-error" class="error" style="display: none;">
+                
+            </div>
         </section>
     </main>
     <aside>
@@ -51,5 +47,6 @@
     <footer>
         &copy; 2026 - Universidad Fidélitas - Ambiente Web Cliente Servidor
     </footer>
+<script src="./public/js/login.js"></script>
 </body>
 </html>
